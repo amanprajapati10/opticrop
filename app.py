@@ -6,7 +6,8 @@ import os
 app = Flask(__name__)
 
 # Absolute path to your model file
-model_path = r'C:\Users\Asus\Desktop\OPTICROP\opticrop\model.pkl'
+model_path = 'model.pkl'
+
 
 # Load the model safely
 try:
