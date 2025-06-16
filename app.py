@@ -3,7 +3,7 @@ from flask import Flask, request, render_template
 import pickle
 import os
 
-app = Flask(__name__, template_folder='templates')
+app = Flask(__name__)
 
 
 # Absolute path to your model file
