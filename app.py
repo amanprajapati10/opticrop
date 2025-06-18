@@ -3,13 +3,10 @@ from flask import Flask, request, render_template
 import pickle
 import os
 
-app = Flask(__name__, template_folder='Templates')
-
-
+app = Flask(__name__)
 
 # Absolute path to your model file
-model_path = 'model.pkl'
-
+model_path =  os.path.join(os.path.dirname(__file__), 'model.pkl')
 
 # Load the model safely
 try:
